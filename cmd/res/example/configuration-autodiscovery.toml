@@ -50,6 +50,9 @@ File = ''
   RemoveCmdArgs = ''
   ProfilesDir = './res/example'
   UpdateLastConnected = false
+  [Device.Discovery]
+    Enabled = true
+    Interval = '30s'
 
 # Pre-define Devices
 [[DeviceList]]

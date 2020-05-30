@@ -1,0 +1,18 @@
+{
+  "name": "mqtt-device-watcher",
+  "identifiers": {
+    "Host": ".*"
+  },
+  "blockingidentifiers": {
+    "Host": [
+      "Test-.*"
+    ]
+  },
+  "profile": {
+    "name": "Test.Device.MQTT.Profile"
+  },
+  "service": {
+    "name": "edgex-device-mqtt"
+  },
+  "adminState": "UNLOCKED"
+}

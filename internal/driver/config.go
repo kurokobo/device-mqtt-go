@@ -44,6 +44,32 @@ type configuration struct {
 	ResponseKeepAlive int
 	ResponseClientId  string
 	ResponseTopic     string
+
+	DiscoverySchema   string
+	DiscoveryHost     string
+	DiscoveryPort     int
+	DiscoveryUser     string
+	DiscoveryPassword string
+	DiscoveryClientId string
+	DiscoveryTopic    string
+
+	DiscoveryResponseSchema		string
+	DiscoveryResponseHost       string
+	DiscoveryResponsePort       int
+	DiscoveryResponseUser       string
+	DiscoveryResponsePassword   string
+	DiscoveryResponseQos        int
+	DiscoveryResponseKeepAlive  int
+	DiscoveryResponseClientId   string
+	DiscoveryResponseTopic      string
+
+	DefaultCommandSchema	string
+	DefaultCommandHost      string
+	DefaultCommandPort      string
+	DefaultCommandUser      string
+	DefaultCommandPassword  string
+	DefaultCommandClientId  string
+	DefaultCommandTopic     string
 }
 
 // CreateDriverConfig use to load driver config for incoming listener and response listener
