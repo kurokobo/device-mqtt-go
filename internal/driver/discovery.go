@@ -13,6 +13,7 @@ import (
 	"strings"
 
 	"time"
+
 	mqtt "github.com/eclipse/paho.mqtt.golang"
 	sdkModel "github.com/edgexfoundry/device-sdk-go/pkg/models"
 	contract "github.com/edgexfoundry/go-mod-core-contracts/models"
@@ -130,7 +131,7 @@ func newDevices(response []string) ([]sdkModel.DiscoveredDevice, error) {
 			"ClientId": driver.Config.DefaultCommandClientId,
 			"User": driver.Config.DefaultCommandUser,
 			"Password": driver.Config.DefaultCommandPassword,
-			"Topic": driver.Config.DefaultCommandTopic,
+			"Topic": driver.Config.DefaultCommandTopicRoot + "/" + fetcheddevice["name"].(string),
 		}
 
 		device := sdkModel.DiscoveredDevice{

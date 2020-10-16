@@ -53,7 +53,7 @@ type configuration struct {
 	DiscoveryClientId string
 	DiscoveryTopic    string
 
-	DiscoveryResponseSchema		string
+	DiscoveryResponseSchema	    string
 	DiscoveryResponseHost       string
 	DiscoveryResponsePort       int
 	DiscoveryResponseUser       string
@@ -63,13 +63,13 @@ type configuration struct {
 	DiscoveryResponseClientId   string
 	DiscoveryResponseTopic      string
 
-	DefaultCommandSchema	string
+	DefaultCommandSchema    string
 	DefaultCommandHost      string
 	DefaultCommandPort      string
 	DefaultCommandUser      string
 	DefaultCommandPassword  string
 	DefaultCommandClientId  string
-	DefaultCommandTopic     string
+	DefaultCommandTopicRoot string
 	ConnEstablishingRetry int
 	ConnRetryWaitTime     int
 }

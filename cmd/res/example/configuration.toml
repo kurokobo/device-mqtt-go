@@ -65,7 +65,7 @@ File = ''
        ClientId = 'CommandPublisher'
        User = 'admin'
        Password = 'public'
-       Topic = 'CommandTopic'
+       Topic = 'CommandTopic/MQTT-test-device'
 
 # Driver configs
 [Driver]
@@ -109,6 +109,6 @@ DefaultCommandPort = '1883'
 DefaultCommandUser = 'admin'
 DefaultCommandPassword = 'public'
 DefaultCommandClientId = 'CommandPublisher'
-DefaultCommandTopic = 'CommandTopic'
+DefaultCommandTopicRoot = 'CommandTopic'
 ConnEstablishingRetry = '10'
 ConnRetryWaitTime = '5'
