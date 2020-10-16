@@ -70,6 +70,8 @@ type configuration struct {
 	DefaultCommandPassword  string
 	DefaultCommandClientId  string
 	DefaultCommandTopic     string
+	ConnEstablishingRetry int
+	ConnRetryWaitTime     int
 }
 
 // CreateDriverConfig use to load driver config for incoming listener and response listener
